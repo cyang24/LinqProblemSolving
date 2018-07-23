@@ -29,7 +29,7 @@ namespace LinqProblems
 
         public void FindAverageOfAverages(List<string> list)
         {
-            var FinalAverage = list.Select(grades => grades.Split(',')).Select(grades => Array.ConvertAll(grades, double.Parse)).Select(grades => (grades.Sum() - grades.Min()) / (grades.Count() - 1)).Average();
+            var FinalAverage = list.Select(g => g.Split(',')).Select(g => Array.ConvertAll(g, decimal.Parse)).Select(g => (g.Sum() - g.Min()) / (g.Count() - 1)).Average();
             Console.WriteLine(FinalAverage);
         }
 
