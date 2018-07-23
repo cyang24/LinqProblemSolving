@@ -31,6 +31,8 @@ namespace LinqProblems
 
             problems.FindAverageOfAverages(classGrades);
 
+            problems.AlphabeticalStringFrequencyConversion("Terrill");
+
             Console.ReadLine();
           
         }
