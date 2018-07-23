@@ -18,5 +18,14 @@ namespace LinqProblems
             }
         }
 
+        public void NonDuplicateNamesList(List<string> names)
+        {
+            List<string> resultList = names.Distinct().ToList();
+            foreach (string result in resultList)
+            {
+                Console.WriteLine(result);
+            }
+        }
+
     }
 }

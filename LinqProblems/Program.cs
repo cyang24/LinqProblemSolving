@@ -18,6 +18,9 @@ namespace LinqProblems
 
 
 
+            List<string> names = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike" };
+            problems.NonDuplicateNamesList(names);
+
 
 
 
