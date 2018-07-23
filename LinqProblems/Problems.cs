@@ -27,5 +27,10 @@ namespace LinqProblems
             }
         }
 
+        public void FindAverageOfAverages(List<string> list)
+        {
+            var FinalAverage = list.Select(grades => grades.Split(',')).Select(grades => Array.ConvertAll(grades, double.Parse)).Select(grades => (grades.Sum() - grades.Min()) / (grades.Count() - 1)).Average();
+            Console.WriteLine(FinalAverage);
+        }
     }
 }
